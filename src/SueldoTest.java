@@ -30,5 +30,25 @@ public class SueldoTest {
 	public void test5() {
 		assertEquals(1100, sueldo.calculaBruto('E', 6000), 0.01);
 	}
+	
+	@Test
+	public void test6() {
+		assertEquals(50, sueldo.calculaRet('E', 1000), Double.MIN_VALUE);
+	}
+	
+	@Test
+	public void test7() {
+		assertEquals(50, sueldo.calculaRet('F', 1000), 0.01);
+	}
+	
+	@Test
+	public void test8() {
+		assertEquals(110, sueldo.calculaRet('F', 1100), 0.01);
+	}
+	
+	@Test
+	public void test9() {
+		assertEquals(210, sueldo.calculaRet('F', 1400), 0.01);
+	}
 
 }
